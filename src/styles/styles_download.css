@@ -1,0 +1,41 @@
+.img-card {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .img-card img {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    transition: all 0.25s ease;
+    object-position: top;
+    object-fit: cover;
+    ;
+  
+  }
+  
+  .card-custom-title{
+    padding: 50px;
+    text-align: left;
+  }
+  
+  .card-title-name {
+    text-align: center;
+    margin-top: 0px;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 1.30em;
+    white-space:nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  
+  .card-title-name a {
+    color: #000;
+    text-decoration: none !important;
+  }
+  
