@@ -4,8 +4,16 @@
   "description": "Google Script For Books-101 Search",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "test": "test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
