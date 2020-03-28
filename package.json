@@ -1,0 +1,11 @@
+{
+  "name": "gs-book101",
+  "version": "1.0.0",
+  "description": "Google Script For Books-101 Search",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
