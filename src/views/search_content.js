@@ -15,11 +15,6 @@ book3.forEach((c, d) => {
     book4.push(n);
   }
 });
-console.log(book4.length)
-console.log(book4)
-
-
-
 
 let card_cover = ""
 book4.forEach((x,y)=>{

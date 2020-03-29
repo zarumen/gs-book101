@@ -52,7 +52,7 @@ book.forEach( x => {
 })
 // $('#book').html(card)
 
-const download_book = `
+const download_book_modal = `
   <section class="wrapper">
     <div class="content">
       <div class="container">

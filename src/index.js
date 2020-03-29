@@ -1,7 +1,8 @@
+import "./import-jquery";
 import search_content from "./views/search_content";
+import {b4} from "./views/search_content";
 import download_book from "./views/download_book";
 import download_book_modal from "./views/download_book_modal";
-import bookContent from "./data/book-search"
 import book from "./data/book"
 import paginator from "./paginator";
 
@@ -35,10 +36,11 @@ if (window.location.pathname === "/") {
   document.getElementById("search").setAttribute("placeholder" , search_index);
   document.getElementById("search2").setAttribute("placeholder" , search_index);
  
-  const book_cat = bookContent.map(cat => cat.book_category)
+  const book_cat = book.map(cat => cat.book_category)
   const category = [...new Set(book_cat)]
+  console.log(category)
   let dropdowoItem = ""
-  category.forEach((x,y) => {
+  category.forEach(x => {
     dropdowoItem += `	<button class="dropdown-item text" id="dropdown-item" href="#">${x}</button>`
   })
   $('#dropdown-book').html(dropdowoItem)
@@ -51,7 +53,7 @@ if (window.location.pathname === "/") {
       box: document.getElementById("paginator"+y)
     })})
     
-}else{
+}else if(window.location.pathname === "/download_book"){
   document.getElementById("page_book").setAttribute("class", "active");
   document.getElementById("search").setAttribute("placeholder" , search_book);
   document.getElementById("search2").setAttribute("placeholder" , search_book);
@@ -59,8 +61,20 @@ if (window.location.pathname === "/") {
   const book_cat = book.map(cat => cat.book_category)
   const category = [...new Set(book_cat)]
   let dropdowoItem = ""
-  category.forEach((x,y) => {
-    dropdowoItem += `	<button class="dropdown-item text" id="dropdown-item" href="#" value="${x}">${x}</button>`
+  category.forEach(x => {
+    dropdowoItem += `	<button class="dropdown-item text" id="dropdown-item" href="#">${x}</button>`
+  })
+  $('#dropdown-book').html(dropdowoItem)
+}else if(window.location.pathname === "/download_book_modal"){
+  document.getElementById("page_modal").setAttribute("class", "active");
+  document.getElementById("search").setAttribute("placeholder" , search_book);
+  document.getElementById("search2").setAttribute("placeholder" , search_book);
+
+  const book_cat = book.map(cat => cat.book_category)
+  const category = [...new Set(book_cat)]
+  let dropdowoItem = ""
+  category.forEach(x => {
+    dropdowoItem += `	<button class="dropdown-item text" id="dropdown-item" href="#">${x}</button>`
   })
   $('#dropdown-book').html(dropdowoItem)
 }
