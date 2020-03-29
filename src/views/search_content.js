@@ -25,7 +25,7 @@ let card_cover = ""
 book4.forEach((x,y)=>{
 
   let set_book =""
-  let book_s = book.filter(c=>c.search_headin===x.search_headin)
+  let book_s = book.filter(c=>c.search_heading===x)
   book_s.forEach(a=>{
          set_book += ` 
           <div class="col-xs-12 col-sm-12 col-lg-3" id="content">
