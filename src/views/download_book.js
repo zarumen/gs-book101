@@ -8,7 +8,7 @@ book.forEach( x => {
   <div class="col-xs-12 col-sm-4 col-lg-3 mt-3">
     <div class="card">
       <a class="img-card" href="" data-toggle="modal" data-target="#exampleModalLong">
-      <img src="https://book.rgtcenter.com/cover/004-01.jpg"></a>
+      <img src="${x.book_cover}"></i></a>
         <div class="card-custom-titile">
          <h5 class="card-title-name">${x.book_name}</h5>
         </div>
@@ -20,9 +20,7 @@ book.forEach( x => {
     <div class="modal-content">
       <div class="modal-header" style="border-bottom: none;">
         <h1 class="modal-title mt-2" id="exampleModalLongTitle">พ่อสอนลูก</h1>
-        <a href="http://book.rgtcenter.com/004-01.pdf" target="_blank">
-          <i class="fas fa-file-pdf fa-2x mt-4 mr-5 pr-5"></i>
-        </a>
+        
       </div>  
       <div class="modal-body">
           <table class="table table-striped">
