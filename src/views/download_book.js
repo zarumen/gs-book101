@@ -8,7 +8,7 @@ book.forEach( x => {
   <div class="col-xs-12 col-sm-4 col-lg-3 mt-3">
     <div class="card">
       <a class="img-card" href="" data-toggle="modal" data-target="#exampleModalLong">
-      <img src="../img/พ่อสอนลูก.jpg" ></a>
+      <img src="https://book.rgtcenter.com/cover/004-01.jpg"></a>
         <div class="card-custom-titile">
          <h5 class="card-title-name">${x.book_name}</h5>
         </div>
