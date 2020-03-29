@@ -1,5 +1,6 @@
 import search_content from "./views/search_content";
 import download_book from "./views/download_book";
+import download_book_modal from "./views/download_book_modal";
 import bookContent from "./data/book-search"
 import book from "./data/book"
 import paginator from "./paginator";
@@ -19,7 +20,8 @@ function collapse(a){
 
 const ROUTES = {
   "/": search_content,
-  "/download_book": download_book
+  "/download_book": download_book,
+  "/download_book_modal": download_book_modal
 };
 const contentDiv = document.getElementById("page");
 contentDiv.innerHTML = ROUTES[window.location.pathname];
