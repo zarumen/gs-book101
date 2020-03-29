@@ -41,12 +41,14 @@ if (window.location.pathname === "/") {
   })
   $('#dropdown-book').html(dropdowoItem)
 
-  paginator({
-    get_rows: function () {
-        return document.getElementById("content").getElementsByTagName("div");
-    },
-    box: document.getElementById("paginator")
-  });
+  b4.forEach((x,y)=>{
+    paginator({
+      get_rows: function () {
+          return document.getElementById("content"+y).getElementsByTagName("div");
+      },
+      box: document.getElementById("paginator"+y)
+    })})
+    
 }else{
   document.getElementById("page_book").setAttribute("class", "active");
   document.getElementById("search").setAttribute("placeholder" , search_book);
