@@ -233,7 +233,7 @@ export default [
   },
   {
     id: 30,
-    book_name: "ง่ายแต่ลึก 1",
+    book_name: "ง่ายแต่ลึก1",
     book_link_pdf: "http://book.rgtcenter.com/062-01.pdf",
     book_link_text: "http://book.rgtcenter.com/062-01.txt",
     book_category: "ง่ายแต่ลึก",
@@ -241,7 +241,7 @@ export default [
   },
   {
     id: 31,
-    book_name: "ง่ายแต่ลึก 2",
+    book_name: "ง่ายแต่ลึก2",
     book_link_pdf: "http://book.rgtcenter.com/065-01.pdf",
     book_link_text: "http://book.rgtcenter.com/065-01.txt",
     book_category: "ง่ายแต่ลึก",
@@ -249,7 +249,7 @@ export default [
   },
   {
     id: 32,
-    book_name: "ง่ายแต่ลึก 3",
+    book_name: "ง่ายแต่ลึก3",
     book_link_pdf: "http://book.rgtcenter.com/071-01.pdf",
     book_link_text: "http://book.rgtcenter.com/071-01.txt",
     book_category: "ง่ายแต่ลึก",
@@ -273,7 +273,7 @@ export default [
   },
   {
     id: 35,
-    book_name: "คำไม่เล็กของคุณครูไม่ใหญ่ 1",
+    book_name: "คำไม่เล็กของคุณครูไม่ใหญ่1",
     book_link_pdf: "http://book.rgtcenter.com/067-01.pdf",
     book_link_text: "http://book.rgtcenter.com/067-01.txt",
     book_category: "คำไม่เล็กของคุณครูไม่ใหญ่",
@@ -281,7 +281,7 @@ export default [
   },
   {
     id: 36,
-    book_name: "คำไม่เล็กฯ 1 (บุญเท่านั้นเป็นที่พึ่ง)",
+    book_name: "บุญเท่านั้นเป็นที่พึ่ง (คำไม่เล็กฯ1)",
     book_link_pdf: "http://book.rgtcenter.com/072-01.pdf",
     book_link_text: "http://book.rgtcenter.com/072-01.txt",
     book_category: "คำไม่เล็กของคุณครูไม่ใหญ่",
@@ -289,7 +289,7 @@ export default [
   },
   {
     id: 37,
-    book_name: "คำไม่เล็กฯ 2 (เกิดมาสร้างบารมี)",
+    book_name: "เกิดมาสร้างบารมี (คำไม่เล็กฯ2)",
     book_link_pdf: "http://book.rgtcenter.com/073-01.pdf",
     book_link_text: "http://book.rgtcenter.com/073-01.txt",
     book_category: "คำไม่เล็กของคุณครูไม่ใหญ่",
@@ -297,7 +297,7 @@ export default [
   },
   {
     id: 38,
-    book_name: "คำไม่เล็กฯ 3 (ศีลธรรมรุ่งเรือง...สังคมร่มเย็น)",
+    book_name: "ศีลธรรมรุ่งเรือง...สังคมร่มเย็น (คำไม่เล็กฯ3)",
     book_link_pdf: "http://book.rgtcenter.com/074-01.pdf",
     book_link_text: "http://book.rgtcenter.com/074-01.txt",
     book_category: "คำไม่เล็กของคุณครูไม่ใหญ่",
@@ -305,7 +305,7 @@ export default [
   },
   {
     id: 39,
-    book_name: "คำไม่เล็กฯ 4 (สมาธิ...ลมหายใจของชีวิต)",
+    book_name: "สมาธิ...ลมหายใจของชีวิต (คำไม่เล็กฯ4)",
     book_link_pdf: "http://book.rgtcenter.com/075-01.pdf",
     book_link_text: "http://book.rgtcenter.com/075-01.txt",
     book_category: "คำไม่เล็กของคุณครูไม่ใหญ่",
@@ -313,7 +313,7 @@ export default [
   },
   {
     id: 40,
-    book_name: "คำไม่เล็กฯ 5 (ศิลปะแห่งสมาธิ)",
+    book_name: "ศิลปะแห่งสมาธิ (คำไม่เล็กฯ5)",
     book_link_pdf: "http://book.rgtcenter.com/076-01.pdf",
     book_link_text: "http://book.rgtcenter.com/076-01.txt",
     book_category: "คำไม่เล็กของคุณครูไม่ใหญ่",
@@ -321,7 +321,7 @@ export default [
   },
   {
     id: 41,
-    book_name: "คำสอนคุณครูไม่ใหญ่ 1",
+    book_name: "คำสอนคุณครูไม่ใหญ่1",
     book_link_pdf: "http://book.rgtcenter.com/078-01.pdf",
     book_link_text: "http://book.rgtcenter.com/078-01.txt",
     book_category: "คำสอนคุณครูไม่ใหญ่",
@@ -329,7 +329,7 @@ export default [
   },
   {
     id: 42,
-    book_name: "คำสอนคุณครูไม่ใหญ่ 2",
+    book_name: "คำสอนคุณครูไม่ใหญ่2",
     book_link_pdf: "http://book.rgtcenter.com/082-01.pdf",
     book_link_text: "http://book.rgtcenter.com/082-01.txt",
     book_category: "คำสอนคุณครูไม่ใหญ่",
@@ -337,7 +337,7 @@ export default [
   },
   {
     id: 43,
-    book_name: "คำสอนคุณครูไม่ใหญ่ 3",
+    book_name: "คำสอนคุณครูไม่ใหญ่3",
     book_link_pdf: "http://book.rgtcenter.com/083-01.pdf",
     book_link_text: "http://book.rgtcenter.com/083-01.txt",
     book_category: "คำสอนคุณครูไม่ใหญ่",
