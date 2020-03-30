@@ -5,13 +5,14 @@ let card = ""
 
 book.forEach( x => {
   card += `
-  <div class="col-xs-12 col-sm-4 col-lg-3 mt-3">
+  <div class="col-6 col-sm-4 col-md-3 col-lg-2">
     <div class="card">
       <a class="img-card" href="" data-toggle="modal" data-target="#exampleModalLong">
-      <img src="${x.book_cover}"></i></a>
-        <div class="card-custom-titile">
-         <h5 class="card-title-name">${x.book_name}</h5>
-        </div>
+        <img src="${x.book_cover}">
+      </a>
+      <div class="card-custom-titile">
+        <h5 class="card-title-name heading">${x.book_name}</h5>
+      </div>
     </div>
 	</div>
 	 
@@ -56,7 +57,7 @@ const download_book = `
   <section class="wrapper">
     <div class="content">
       <div class="container">
-        <div class="row" id="book">  
+        <div class="row mt-3" id="book">  
           ${card}    
         </div>
       </div>
