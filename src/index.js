@@ -4,6 +4,7 @@ import {b4} from "./views/search_content";
 import download_book from "./views/download_book";
 import download_book_modal from "./views/download_book_modal";
 import book from "./data/book"
+import bookCT from "./data/book-search"
 import paginator from "./paginator";
 
 function collapse(a){
@@ -36,7 +37,7 @@ if (window.location.pathname === "/") {
   document.getElementById("search").setAttribute("placeholder" , search_index);
   document.getElementById("search2").setAttribute("placeholder" , search_index);
  
-  const book_cat = book.map(cat => cat.book_category)
+  const book_cat = bookCT.map(cat => cat.book_category)
   const category = [...new Set(book_cat)]
   console.log(category)
   let dropdowoItem = ""
