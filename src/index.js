@@ -33,10 +33,12 @@ const search_index = "ค้นหาเนื้อหา / สารบัญ"
 const search_book = "ค้นหาหนังสือ"
 
 if (window.location.pathname === "/") {
+  //navbar active / placeholder
   document.getElementById("page_index").setAttribute("class", "active");
   document.getElementById("search").setAttribute("placeholder" , search_index);
   document.getElementById("search2").setAttribute("placeholder" , search_index);
- 
+
+ //navbar dropdown-filter
   const book_cat = bookCT.map(cat => cat.book_category)
   const category = [...new Set(book_cat)]
   console.log(category)
@@ -55,18 +57,22 @@ if (window.location.pathname === "/") {
     })})
     
 }else if(window.location.pathname === "/download_book"){
+  //navbar active / placeholder
   document.getElementById("page_book").setAttribute("class", "active");
   document.getElementById("search").setAttribute("placeholder" , search_book);
   document.getElementById("search2").setAttribute("placeholder" , search_book);
 
+
+  //navbar dropdown-filter
   const book_cat = book.map(cat => cat.book_category)
   const category = [...new Set(book_cat)]
   let dropdowoItem = ""
-  category.forEach(x => {
-    dropdowoItem += `	<button class="dropdown-item text" id="dropdown-item" href="#">${x}</button>`
+  category.forEach(name_cat => {
+    dropdowoItem += `<button class="dropdown-item text" id="dropdown-item" href="" value="${name_cat}">${name_cat}</button>`
   })
   $('#dropdown-book').html(dropdowoItem)
 
+  //card book
   let cardBook = ""
   book.forEach( (element,index) => {
      cardBook += `
@@ -86,15 +92,36 @@ if (window.location.pathname === "/") {
           </div>
         </div>
       </div>
-     
     `
   })
   $('#book').html(cardBook)
   
+  //ready function
   $(document).ready(function(){
+    //modal sarabun
     $('#modalSarabun').on('shown.bs.modal', function(e) {
+      
       var key = $(e.relatedTarget).data('index');
-      // console.log(key);
+
+      let filsarabuns = bookCT.filter(namebook => namebook.search_heading === book[key].book_name)
+
+      let sarabuns = Array.from(new Set(filsarabuns.map(book => book.search_index)))
+      .map(sarabuns => {
+        return filsarabuns.find(book => book.search_index === sarabuns)
+      })
+
+      let addSarabun = ""
+      sarabuns.forEach((sarabun,no) => {
+        addSarabun += `
+          <tr>
+            <th scope="row">${no+1}</th>
+            <td>${sarabun.search_index}</td>
+            <td><a href="${sarabun.link_pdf}"><i class="fas fa-file-pdf fa-lg"></i></a></td>
+            <td><a href="${sarabun.link_text}"><i class="fas fa-file-alt fa-lg"></i></a></td>
+          </tr>	
+        `
+      })
+
       $("#modalShow").html(`
         <div class="modal-header" style="border-bottom: none;">
           <div class="row">
@@ -103,7 +130,7 @@ if (window.location.pathname === "/") {
               <img src="${book[key].book_cover}" class="d-none d-sm-block w-100">
             </div>
 
-            <div class="col-sm-12 col-md-8 col-lg-7">
+            <div class="col-sm-12 col-md-8 col-lg-9">
               <h3 class="modal-title mt-2" id="exampleModalLongTitle">${book[key].book_name}</h3>
               <dl class="row mt-2">
                 <dt class="col-4 text-truncate">หมวดหมู่</dt>
@@ -132,13 +159,8 @@ if (window.location.pathname === "/") {
                 <th scope="col" style="width: 24px;">Text</th>
               </tr>
             </thead>
-            <tbody id="index_name">
-              <tr>
-                <th scope="row">1</th>
-                <td>หัวใจพระบรมโพธิสัตว์</td>
-                <td><a href="http://book.rgtcenter.com/083-01-01.pdf"><i class="fas fa-file-pdf fa-lg"></i></a></td>
-                <td><a href="http://book.rgtcenter.com/083-01-01.pdf"><i class="fas fa-file-alt fa-lg"></i></a></td>
-              </tr>	
+            <tbody>
+              ${addSarabun}
             </tbody>
           </table>
         </div>
@@ -146,6 +168,9 @@ if (window.location.pathname === "/") {
           <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size: 1rem;">Close</button>
         </div>
       `)
+    })
+    $('#dropdown-item').on('click',function(e){
+      console.log(e)
     })
   })
 
