@@ -20,7 +20,7 @@ export default [
     book_name: "ของขวัญ",
     book_link_pdf: "http://book.rgtcenter.com/021-01.pdf",
     book_link_text: "http://book.rgtcenter.com/021-01.txt",
-    book_category: "พรรษาวิสุทธิ์",
+    book_category: "ของขวัญ",
     book_cover:"https://book.rgtcenter.com/cover/021-01.jpg"
   },
   {
